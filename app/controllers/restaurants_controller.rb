@@ -5,5 +5,5 @@ end
 
     def show
         restaurant=Restaurant.find_by!(id: params[:id])
-        render json: restaurant, include: :pizzas
+        render json: restaurant, serializer: RestaurantAndPizzasSerializer
     end
