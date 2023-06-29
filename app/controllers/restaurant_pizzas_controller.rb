@@ -1,6 +1,7 @@
 class RestaurantPizzasController < ApplicationController
     def create
-        RestaurantPizza.create(restaurant_pizza_params)
+        restaurant=RestaurantPizza.create(restaurant_pizza_params)
+        render json: restaurant.pizza
     end
 
     private
