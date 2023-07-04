@@ -1,27 +1,38 @@
 ## PHASE-4-CODE-CHALLENGE-1-Pizza
 
-
-Things you may want to cover:
+Things you may want to consider:
 
 * Ruby version  - 3.0.2
+* Rails version - 7.0.5
 
-* System dependencies
-checkout the gemfile for dependencies
+* Database creation method used
+rails new app-name -minimal
 
-* Configuration
+* Database initialization process
 
-* Database creation
-### creating database
-rails new app-name –minimal 
+#### LOCAL SERVER TESTING
 
+You can set up this repository by following this manual
 
-* Database initialization
-### Configuring your database 
-rails db:create - creates a new database
-rails db:migrate - migrations are done using this command and a schema is generated
-rails db:seed - this command is used to populate your table with data
+1. Clone the repository
+   ```bash
+   git clone https://github.com/Afrikan-Son/Phase-4-Pizza-Challenge
+   ```
+2. Ensure the ruby gems are setup in your machine
+   ```bash
+   bundle install
+   ```
+3. Perform any pending database migrations and seed data
+   ```bash
+   rails db:migrate db:seed
+   ```
+4. Make sure no other application is already running on PORT 3000 and run the application
+   ```bash
+   rails s
+   ```
+5. Open Postman 
 
-
+6. Test the deliverables by appending the routes under **ROUTES Deliverables** to the URL above and making the relevant HTTP requests.
 ## MODEL Deliverables
 
 Create the following relationships:
